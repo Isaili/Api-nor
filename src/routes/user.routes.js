@@ -19,5 +19,4 @@ router.delete("/:userId",[authjwt.verifyToken,
 router.patch("/:userId", [authjwt.verifyToken, userExist,  authLimiter.changePassword], userCtrl.changePassword);
 
 
-
 export default router;
